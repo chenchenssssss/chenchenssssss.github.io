@@ -87,7 +87,7 @@ var vue = new Vue({
                     }
                 });
             }
-            $('delPeoductModal').modal('hide');
+            $('#delPeoductModal').modal('hide');
         },
     },
 });
