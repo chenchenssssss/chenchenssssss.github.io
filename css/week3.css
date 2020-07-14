@@ -55,3 +55,11 @@ td,label,h5,input{
 .modal-header{
     background-color:#FFF2F7;
 }
+.deleteText{
+    color: #797979;
+    text-align: right;
+    font-size: 14px;
+}
+.deleteText0{
+    color: #919191;
+}

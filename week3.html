@@ -44,13 +44,13 @@
           <td>
             <div class="btn-group" role="group" aria-label="Basic example">
               <button type="button" class="btn1 btn-sm" @click="openModal('edit', item)">変更</button>
-              <button type="button" class="btn2 btn-sm" @click="openModal('edit', item)">削除</button>
+              <button type="button" class="btn2 btn-sm" @click="openModal('delete', item)">削除</button>
             </div>
           </td>
         </tr>
       </tbody>
     </table>
-  </div>
+  
 
   <!-- 新增產品介面 -->
 
@@ -152,14 +152,15 @@
           </button>
         </div>
         <div class="modal-body">
-          削除してもよろしいですか？
-          <strong class="text-danger">{{ tempProduct.title }}</strong> は完全に削除されます。
+          <strong class="text-danger"> {{ tempProduct.title }}</strong> 
+          <span class="deleteText0">を削除してもよろしいですか？</span>
+          <p class="deleteText">（商品は完全に削除されます）</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
+          <button type="button" class="btn " data-dismiss="modal">
             キャンセル
           </button>
-          <button type="button" class="btn btn-danger" @click="delProduct">
+          <button type="button" class="btn" @click="delProduct">
             削除する
           </button>
         </div>
@@ -168,7 +169,7 @@
   </div>
 </div>
 </div>
-
+</div>
 
 
 
